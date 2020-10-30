@@ -10,9 +10,6 @@ using System.Windows.Forms;
 namespace RandWindow
 {
     
-          
-
-
     public partial class Form1 : Form
     {
         public Form1()
@@ -52,7 +49,7 @@ namespace RandWindow
         private void button1_Click(object sender, EventArgs e)
         {
             // Вывести сообщение с текстом "Вы усердны"
-            MessageBox.Show("Вы усердны!!");
+            MessageBox.Show("А ты хорош!!!");
             // Завершить приложение
             Application.Exit();
         }
@@ -63,9 +60,12 @@ namespace RandWindow
             // второй параметр - заголовок окна сообщения "Внимание"
             // MessageBoxButtons.OK - тип размещаемой кнопки на форме сообщения
             // MessageBoxIcon.Information - тип сообщения - будет иметь иконку "информация" и соотвествующее звукововой сигнал
-            MessageBox.Show("Мы не сомневались в вешем безразличии", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Эх, а я то думал, что ты готов заниматься", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-   
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
