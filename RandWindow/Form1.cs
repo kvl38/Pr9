@@ -33,8 +33,8 @@ namespace RandWindow
             if (e.X > 80 && e.X < 195 && e.Y > 100 && e.Y < 135)
             {
                 tmp_location = this.Location;
-                tmp_location.X += rnd.Next(-100, 100);
-                tmp_location.Y += rnd.Next(-100, 100);
+                tmp_location.X += rnd.Next(-200, 200);
+                tmp_location.Y += rnd.Next(-200, 200);
 
                 if (tmp_location.X < 0 || tmp_location.X > (_w - this.Width / 2) || tmp_location.Y < 0 || tmp_location.Y > (_h - this.Height / 2))
                 {

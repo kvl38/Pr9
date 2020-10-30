@@ -57,13 +57,15 @@
       // 
       this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
       this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+      this.listBox1.ForeColor = System.Drawing.Color.LawnGreen;
       this.listBox1.FormattingEnabled = true;
       this.listBox1.ItemHeight = 108;
       this.listBox1.Location = new System.Drawing.Point(0, 0);
       this.listBox1.MultiColumn = true;
       this.listBox1.Name = "listBox1";
-      this.listBox1.Size = new System.Drawing.Size(860, 295);
+      this.listBox1.Size = new System.Drawing.Size(860, 394);
       this.listBox1.TabIndex = 0;
+      this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
       // 
       // timer1
       // 
@@ -79,7 +81,7 @@
             this.accuracyLabel,
             this.toolStripStatusLabel1,
             this.difficultyProgressBar});
-      this.statusStrip1.Location = new System.Drawing.Point(0, 273);
+      this.statusStrip1.Location = new System.Drawing.Point(0, 372);
       this.statusStrip1.Name = "statusStrip1";
       this.statusStrip1.Size = new System.Drawing.Size(860, 22);
       this.statusStrip1.SizingGrip = false;
@@ -190,6 +192,7 @@
       // label1
       // 
       this.label1.AutoSize = true;
+      this.label1.ForeColor = System.Drawing.Color.Crimson;
       this.label1.Location = new System.Drawing.Point(729, 118);
       this.label1.Name = "label1";
       this.label1.Size = new System.Drawing.Size(35, 13);
@@ -201,7 +204,7 @@
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(860, 295);
+      this.ClientSize = new System.Drawing.Size(860, 394);
       this.Controls.Add(this.label1);
       this.Controls.Add(this.checkBox4);
       this.Controls.Add(this.checkBox3);
@@ -213,6 +216,7 @@
       this.KeyPreview = true;
       this.Name = "Form1";
       this.Text = "Hit the keys!";
+      this.Load += new System.EventHandler(this.Form1_Load);
       this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
       this.statusStrip1.ResumeLayout(false);
       this.statusStrip1.PerformLayout();
